@@ -21,7 +21,6 @@ jobs:
           aws-region: ap-south-1
 
       - name: Upload Files to S3
-        run: |
-          aws s3 sync . s3://kat-test1 \
-            --delete \
-            --acl public-read
+        run: aws s3 sync . s3://kat-test1 --delete
+          
+
